@@ -26,7 +26,7 @@ img {
   object-fit: cover;
 }
 p {
-  color: black;
+  color: #254441;
   font-size: 1.4rem;
   margin-top: 5px;
   line-height: 2.5rem;
@@ -36,7 +36,7 @@ p {
 .section-title {
   font-size: 4rem;
   font-weight: 300;
-  color: black;
+  color: #254441;
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -46,22 +46,24 @@ p {
   color: #17c3b2;
 }
 
-.cta {
+.button {
   display: inline-block;
   padding: 10px 30px;
-  color: white;
-  background-color: transparent;
-  border: 2px solid #17c3b2;
+  /*color: white;*/
+  background-color: #96a9af;
+  border: 2px solid #96a9af;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   margin-top: 30px;
   transition: 0.3s ease;
   transition-property: background-color, color;
+  border-radius: 10px;
 }
-.cta:hover {
+.button:hover {
   color: white;
   background-color: #17c3b2;
+  border-color: #17c3b2;
 }
 .brand h1 {
   font-size: 3rem;
@@ -264,7 +266,7 @@ p {
 #projects .projects {
   flex-direction: column;
   max-width: 1200px;
-  margin: 200px 0px 100px 0px;
+  margin: 0;
   padding: 100px 0;
 }
 
@@ -273,7 +275,7 @@ p {
 }
 #projects .all-projects {
   position: relative;
-  background-color: #fafafa;
+  /*background-color: #fafafa;*/
   display: grid;
   height: 100%;
   grid-template-rows: repeat(2, 1fr);
@@ -435,7 +437,7 @@ p {
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px 20px;
-  height: 900px;
+  height: 800px;
 }
 #about .col-left {
   width: 250px;
@@ -458,14 +460,14 @@ p {
 #about .col-right p {
   margin-bottom: 20px;
 }
-#about .col-right .cta {
-  color: black;
+#about .col-right .button {
+  color: white;
   margin-bottom: 50px;
   padding: 10px 20px;
   font-size: 2rem;
 }
 #about .col-left .about-img {
-  /*height: 100%;*/
+  height: 100%;
   width: 100%;
   position: relative;
   border: 10px solid white;
@@ -480,16 +482,40 @@ p {
   border: 7px solid #fdff47;
   z-index: -1;
 }
+
+#about .col-right .about-img2 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+#about .col-right .about-img2::after {
+  content: "";
+  position: absolute;
+  right: -100px;
+  top: -625px;
+  height: 190%;
+  width: 98%;
+  /* border: 7px solid #fdff47; */
+  z-index: -1;
+  background-image: url(/app/img/hanging-cat-4794470_1280.png);
+}
 /* End About Section */
 
 /* contact Section */
 #contact .contact {
   flex-direction: column;
-  max-width: 1200px;
+  /*max-width: 1200px;*/
   margin: 0 auto;
+  padding: 0;
+  background-image: url(/app/img/fig-contact.png);
+  background-size: 640px 417px;
+  background-attachment: fixed;
+  background-position: center 0;
 }
 #contact .contact-items {
   width: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 #contact .contact-item {
   width: 80%;
@@ -527,11 +553,12 @@ p {
 /* New contact Section */
 .contact-us {
   /*display: flex;*/
+  margin-top: 20px;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #fafafa;
-  padding: 0 5rem 3rem 5rem;
+  /*background-color: #fafafa;*/
+  padding: 0 5rem 5rem 0rem;
 }
 .contact-us .section-title {
   margin-bottom: 3rem;
@@ -548,8 +575,8 @@ p {
   height: 100%;
 }
 .contact-form * {
-  width: 100%;
-  margin-top: 20px;
+  width: 150%;
+  margin-top: 50px;
 }
 
 .contact-form input {
@@ -576,6 +603,27 @@ p {
   justify-content: center;
   padding: 0 20px;
   margin-top: -40px;
+}
+
+#input-submit {
+  display: inline-block;
+  padding: 10px 30px;
+  /*color: white;*/
+  background-color: #96a9af;
+  border: 2px solid #96a9af;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 50px;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+  margin-left: 70px;
+  border-radius: 10px;
+}
+#input-submit:hover {
+  color: white;
+  background-color: #17c3b2;
+  border-color: #17c3b2;
 }
 
 /*End contact Section */
@@ -658,9 +706,9 @@ p {
 
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
-  .cta {
+  .button {
     font-size: 2.5rem;
-    padding: 20px 60px;
+    padding: 10px 30px 10px 30px;
   }
   h1.section-title {
     font-size: 6rem;
@@ -769,12 +817,12 @@ p {
   #contact .contact-items {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     justify-content: space-evenly;
     margin: 0;
   }
   #contact .contact-item {
-    width: 30%;
+    width: 70%;
     /*margin: 0;*/
     flex-direction: row;
   }
