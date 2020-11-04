@@ -58,7 +58,7 @@ p {
   margin-top: 30px;
   transition: 0.3s ease;
   transition-property: background-color, color;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 .button:hover {
   color: white;
@@ -85,7 +85,7 @@ p {
 }
 #header .header {
   min-height: 8vh;
-  background-color: rgba(72, 85, 99, 0.8);
+  background-color: #485563;
   transition: 0.3s ease background-color;
 }
 #header .nav-bar {
@@ -100,7 +100,7 @@ p {
 #header .nav-list ul {
   list-style: none;
   position: absolute;
-  background-color: rgb(31, 30, 30);
+  background-color: #485563;
   width: 100vw;
   height: 100vh;
   left: 100%;
@@ -372,8 +372,8 @@ p {
 #projects .project-main-card .project-title {
   margin-top: 40px;
   font-size: 4.2rem;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+  /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;*/
   color: #ffffff;
 }
 
@@ -618,7 +618,7 @@ p {
   transition: 0.3s ease;
   transition-property: background-color, color;
   margin-left: 70px;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 #input-submit:hover {
   color: white;
