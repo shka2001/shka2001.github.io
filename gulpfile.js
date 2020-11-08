@@ -7,7 +7,7 @@ gulp.task("sass", function () {
   return gulp
     .src("app/scss/*.scss")
     .pipe(sass())
-    .pipe(gulp.dest("app/css"))
+    .pipe(gulp.dest("docs/css"))
     .pipe(browserSync.stream());
 });
 
@@ -16,7 +16,9 @@ gulp.task(
   "serve",
   gulp.series("sass", function () {
     browserSync.init({
-      server: "./",
+      server: {
+        baseDir: ["./app"],
+      },
     });
 
     gulp.watch("app/scss/*.scss", gulp.series("sass"));
