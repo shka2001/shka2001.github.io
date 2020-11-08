@@ -11,6 +11,9 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+body {
+  overflow-x: hidden;
+}
 a {
   text-decoration: none;
 }
@@ -95,7 +98,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   max-width: 1300px;
   padding: 0 10px;
@@ -106,7 +109,7 @@ p {
   background-color: #485563;
   width: 100vw;
   height: 100vh;
-  left: 100%;
+  left: 100vw;
   top: 0;
   display: flex;
   flex-direction: column;
@@ -117,7 +120,7 @@ p {
   transition: 0.5s ease left;
 }
 #header .nav-list ul.active {
-  left: 0%;
+  left: 0vw;
 }
 #header .nav-list ul a {
   font-size: 2.5rem;
