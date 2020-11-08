@@ -327,7 +327,7 @@ p {
 }
 
 #projects .project-card:hover,
-.main-card:hover {
+.project-main-card:hover {
   transform: scale(1.02);
   transform-origin: center;
   box-shadow: 10px 30px 60px 0 rgba(0, 0, 0, 0.1);
