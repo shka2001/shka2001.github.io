@@ -43,48 +43,32 @@ let inputSubmit = document.getElementById("input-submit");
 console.log(inputSubmit.value);
 
 inputSubmit.addEventListener("click", function (e) {
+  let is_empty = false;
   if (inputName.value == "") {
     inputName.style.borderColor = "red";
+    is_empty = true;
     console.log("Name is empty");
+  } else {
+    inputName.style.borderColor = "black";
   }
+
   if (inputeEmail.value == "") {
     inputeEmail.style.borderColor = "red";
+    is_empty = true;
     console.log("Email is empty");
-  }
-  if (inputTextarea.value == "") {
-    inputTextarea.style.borderColor = "red";
-    console.log("Textarea is empty");
-  }
-  if (
-    inputName.value == "" &&
-    inputeEmail.value == "" &&
-    inputTextarea.value == ""
-  ) {
-    inputName.style.borderColor = "red";
-    inputeEmail.style.borderColor = "red";
-    inputTextarea.style.borderColor = "red";
-    console.log("Name Email Message are empty");
-  }
-  if (inputName.value.length > 0) {
-    inputName.style.borderColor = "black";
-  }
-  if (inputeEmail.value.length > 0) {
+  } else {
     inputeEmail.style.borderColor = "black";
   }
+
   if (inputTextarea.value == "") {
-    inputTextarea.style.borderColor = "black";
-    console.log("Textarea is empty");
-  } else if (inputName.value == "") {
-    inputName.style.borderColor = "black";
-    inputName.style.borderColor = "red";
-    console.log("Name is empty");
-  } else if (inputeEmail.value == "") {
-    inputeEmail.style.borderColor = "black";
-    inputeEmail.style.borderColor = "red";
-    console.log("Email is empty");
-  } else if (inputTextarea.value == "") {
-    inputTextarea.style.borderColor = "black";
     inputTextarea.style.borderColor = "red";
-    console.log("Textareais empty");
+    is_empty = true;
+    console.log("Textarea is empty");
+  } else {
+    inputTextarea.style.borderColor = "black";
+  }
+
+  if (!is_empty) {
+    window.location.assign("/app/sent.html");
   }
 });
