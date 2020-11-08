@@ -69,6 +69,6 @@ inputSubmit.addEventListener("click", function (e) {
   }
 
   if (!is_empty) {
-    window.location.assign("/app/sent.html");
+    window.location.assign("/sent.html");
   }
 });

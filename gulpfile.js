@@ -16,7 +16,7 @@ gulp.task(
   "serve",
   gulp.series("sass", function () {
     browserSync.init({
-      server: "./app/",
+      server: "./",
     });
 
     gulp.watch("app/scss/*.scss", gulp.series("sass"));
@@ -25,26 +25,23 @@ gulp.task(
 );
 
 gulp.task("build-css", function () {
-  return gulp.src("app/css/*.css").pipe(gulp.dest("docs/app/css/"));
+  return gulp.src("app/css/*.css").pipe(gulp.dest("docs/css/"));
 });
 
 gulp.task("build-pdf", function () {
-  return gulp.src("app/pdf/*.pdf").pipe(gulp.dest("docs/app/pdf/"));
+  return gulp.src("app/pdf/*.pdf").pipe(gulp.dest("docs/pdf/"));
 });
 
 gulp.task("build-sass", function () {
-  return gulp
-    .src("app/scss/*.scss")
-    .pipe(sass())
-    .pipe(gulp.dest("docs/app/css/"));
+  return gulp.src("app/scss/*.scss").pipe(sass()).pipe(gulp.dest("docs/css/"));
 });
 
 gulp.task("build-html", function () {
-  return gulp.src("app/*.html").pipe(gulp.dest("docs/app/"));
+  return gulp.src("app/*.html").pipe(gulp.dest("docs/"));
 });
 
 gulp.task("build-img", function () {
-  return gulp.src("app/img/*").pipe(gulp.dest("docs/app/img/"));
+  return gulp.src("app/img/*").pipe(gulp.dest("docs/img/"));
 });
 
 gulp.task(

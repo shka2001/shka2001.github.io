@@ -9,7 +9,7 @@ body {
 }
 .container {
   height: 100vh;
-  background-image: url(/app/img/fig-profile.png);
+  background-image: url(/img/fig-profile.png);
   display: flex;
   justify-content: center;
   align-items: center;

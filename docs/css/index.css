@@ -206,7 +206,7 @@ p {
 
 /* Hero Section */
 #hero {
-  background-image: url(/app/img/pattern-5358326.png);
+  background-image: url(/img/pattern-5358326.png);
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -299,7 +299,7 @@ p {
   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.1), 0 6px 12px 0 rgba(0, 0, 0, 0.1);
   transition: all 250ms ease-in-out;
   border-radius: 10px;
-  background: url("/app/img/people-event.jpg") no-repeat center center;
+  background: url("/img/people-event.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -488,7 +488,7 @@ p {
   width: 410px;
   /* border: 7px solid #fdff47; */
   z-index: -1;
-  background-image: url(/app/img/hanging-cat-4794470_1280.png);
+  background-image: url(/img/hanging-cat-4794470_1280.png);
 }
 /* End About Section */
 
@@ -498,7 +498,7 @@ p {
   /*max-width: 1200px;*/
   margin: 0 auto;
   padding: 0;
-  background-image: url(/app/img/fig-contact.png);
+  background-image: url(/img/fig-contact.png);
   background-size: 640px 417px;
   background-attachment: fixed;
   background-position: center 0;
