@@ -1,0 +1,44 @@
+Scrum
+ HOW SCRUM WORKS
+  Scrum är en agil metod. Det kännetecknas av att fokus ligger på själva produkten man utvecklar och inte hur man utvecklar den. Arbetet är uppdelat i tidsbestämda iterationer, så kallade sprintar. Dessa perioder kan vara mellan 3 - 30 dagar. Människorna i scrum-teamet är uppdelade i tre roller: Produktägaren, Scrum master och Utvecklingstemet.
+  Kort beskrivet fungerar det som följande:
+
+ Product Backlog
+  Det finns en slags To-Do-lista över allt som behöver göras. Det är produktägaren som bestämmer över vad som finns här och hur listan ska prioriteras.
+
+ Sprint Planning
+  Ett möte hålls där utevecklingsteamet bedömmer vilka delar från product backlog de hinner göra i kommande sprint, och flyttar dessa till sprint backlog.
+
+ Sprint Backlog
+  Detta är kommade sprints to-do-lista.
+
+ Daily Scrum
+  Utvecklingsteamet har varje dag ett kort möte på ca 15 minuter för att stämma av med varandra och planera de kommande 24 timmarna.
+
+ Sprint Review
+  Utvecklingsteamet, scrum master och produktägaren granskar sprintens resultat. Vad har gjorts/inte gjorts och hur påverkar detta nästa sprint?
+
+ Sprint Retrospective
+  Utvecklingsteamet, scrum master och produktägaren utvärderar den senaste sprinten utifrån arbetssätt och identifierar möjlig förbättringar.
+ 
+ Nu är denna sprinten klar och ett nytt sprint planning möte hålls.
+
+
+
+Grafisk profil
+ Det visuella är ofta det första en potentiell kund upplever vid första mötet med ert företag. En grafisk profil är till för att stärka och tydliggöra varumärkets visuella uttryck och se till att det går hand i hand med företagets värderingar och affärsmässiga mål. 
+ En grafisk profil finns ibland en uppfattning om att man gör en grafisk profil för att det ska vara snyggt och till viss del är det sant, men i slutändan handlar det om att förstärka en organisation och öka vinsten. Det handlar om att skapa ett tydligt varumärke som alla i organisationen hjälper till att implementera.
+ En grafisk profil behöver man eftersom en grafisk profil sparar tid och pengar genom att man kan använda sin tid mer effektivt.
+ Exempel på grafiska profiler Connect Swedens grafiska profil består i grunden av deras logotyp, typsnitt, färger, illustrationer och bildspråk. Tillsammans skapar det ett karaktäristiskt utseende för Connect Sweden. Detta utseende går igen i alla kanaler – från deras webb till trycksaker. 
+
+
+Tillgänglighet
+1.2.3 (A) Syntolka eller erbjud alternativ till videoinspelningar
+
+1.4.10 (AA) Skapa en flexibel layout som fungerar vid förstoring eller liten skärm
+
+1.4.11 (AA) Använd tillräckliga kontraster i komponenter och grafik
+
+2.2.1 (A) Ge användarna möjlighet att justera tidsbegränsningar 
+
+3.2.3 (AA) Var konsekvent i navigation, struktur och utformning

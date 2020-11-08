@@ -1,0 +1,65 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container {
+  height: 100vh;
+  background-image: url(/app/img/fig-profile.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  width: 40vh;
+  min-height: 400px;
+  min-width: 400px;
+  background: #ffffff;
+  box-shadow: 0 6px 40px 0 rgb(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: 1000;
+  color: #254441;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 30px;
+  /*color: white;*/
+  background-color: #96a9af;
+  border: 2px solid #96a9af;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+  border-radius: 30px;
+}
+.button:hover {
+  color: white;
+  background-color: #17c3b2;
+  border-color: #17c3b2;
+}
+
+footer {
+  margin-top: auto;
+}
