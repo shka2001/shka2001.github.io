@@ -24,18 +24,32 @@ gulp.task(
   })
 );
 
+gulp.task("build-css", function () {
+  return gulp.src("app/css/*.css").pipe(gulp.dest("docs/app/css/"));
+});
+
+gulp.task("build-pdf", function () {
+  return gulp.src("app/pdf/*.pdf").pipe(gulp.dest("docs/app/pdf/"));
+});
+
 gulp.task("build-sass", function () {
-  return gulp.src("app/scss/*.scss").pipe(sass()).pipe(gulp.dest("docs/css/"));
+  return gulp
+    .src("app/scss/*.scss")
+    .pipe(sass())
+    .pipe(gulp.dest("docs/app/css/"));
 });
 
 gulp.task("build-html", function () {
-  return gulp.src("app/*.html").pipe(gulp.dest("docs/"));
+  return gulp.src("app/*.html").pipe(gulp.dest("docs/app/"));
 });
 
 gulp.task("build-img", function () {
-  return gulp.src("app/img/*").pipe(gulp.dest("docs/img/"));
+  return gulp.src("app/img/*").pipe(gulp.dest("docs/app/img/"));
 });
 
-gulp.task("build", gulp.series("build-html", "build-img", "build-sass"));
+gulp.task(
+  "build",
+  gulp.series("build-html", "build-img", "build-sass", "build-css", "build-pdf")
+);
 
 gulp.task("default", gulp.series("serve"));
