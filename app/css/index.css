@@ -33,6 +33,7 @@ p {
   line-height: 2.5rem;
   font-weight: 300;
   letter-spacing: 0.05rem;
+  text-indent: 1em;
 }
 .section-title {
   font-size: 4rem;
@@ -298,7 +299,7 @@ p {
   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.1), 0 6px 12px 0 rgba(0, 0, 0, 0.1);
   transition: all 250ms ease-in-out;
   border-radius: 10px;
-  background: #254441 /*url("img/japaneseTemple.jpg") no-repeat center center*/;
+  background: url("/app/img/people-event.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -387,18 +388,6 @@ p {
 }
 #projects .project-category {
   position: relative;
-}
-
-#projects .project-category::before {
-  content: "•";
-}
-#projects .project-main-card .project-place {
-  margin-top: auto;
-  color: #64e1ca;
-  font-weight: 400;
-  border-bottom: 0.5px solid #64e1ca;
-  width: 27%;
-  font-size: 0.8rem;
 }
 
 #projects .project-main-card i {
@@ -495,8 +484,8 @@ p {
   position: absolute;
   right: -100px;
   top: -625px;
-  height: 190%;
-  width: 98%;
+  height: 740px;
+  width: 410px;
   /* border: 7px solid #fdff47; */
   z-index: -1;
   background-image: url(/app/img/hanging-cat-4794470_1280.png);
