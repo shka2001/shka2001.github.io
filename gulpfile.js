@@ -24,6 +24,10 @@ gulp.task(
   })
 );
 
+gulp.task("build-js", function () {
+  return gulp.src("app/js/*.js").pipe(gulp.dest("docs/js/"));
+});
+
 gulp.task("build-css", function () {
   return gulp.src("app/css/*.css").pipe(gulp.dest("docs/css/"));
 });
