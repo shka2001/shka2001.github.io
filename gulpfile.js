@@ -52,7 +52,14 @@ gulp.task("build-img", function () {
 
 gulp.task(
   "build",
-  gulp.series("build-html", "build-img", "build-sass", "build-css", "build-pdf")
+  gulp.series(
+    "build-html",
+    "build-js",
+    "build-img",
+    "build-sass",
+    "build-css",
+    "build-pdf"
+  )
 );
 
 gulp.task("default", gulp.series("serve"));
