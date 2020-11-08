@@ -9,6 +9,7 @@ html {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   overflow-x: hidden;
