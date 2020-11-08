@@ -814,7 +814,7 @@ p {
     margin: 0;
   }
   #contact .contact-item {
-    width: 70%;
+    width: 90%;
     /*margin: 0;*/
     flex-direction: row;
   }
