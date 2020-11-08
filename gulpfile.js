@@ -24,4 +24,18 @@ gulp.task(
   })
 );
 
+gulp.task("build-sass", function () {
+  return gulp.src("app/scss/*.scss").pipe(sass()).pipe(gulp.dest("docs/css/"));
+});
+
+gulp.task("build-html", function () {
+  return gulp.src("app/*.html").pipe(gulp.dest("docs/"));
+});
+
+gulp.task("build-img", function () {
+  return gulp.src("app/img/*").pipe(gulp.dest("docs/img/"));
+});
+
+gulp.task("build", gulp.series("build-html", "build-img", "build-sass"));
+
 gulp.task("default", gulp.series("serve"));
