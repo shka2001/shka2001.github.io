@@ -45,15 +45,15 @@ console.log(inputSubmit.value);
 inputSubmit.addEventListener("click", function (e) {
   let is_empty = false;
   if (inputName.value == "") {
-    inputName.style.borderColor = "red";
+    inputName.style.border = "thick solid red";
     is_empty = true;
     console.log("Name is empty");
   } else {
-    inputName.style.borderColor = "black";
+    inputName.style.border = "black";
   }
 
   if (inputeEmail.value == "") {
-    inputeEmail.style.borderColor = "red";
+    inputeEmail.style.border = "thick solid red";
     is_empty = true;
     console.log("Email is empty");
   } else {
@@ -61,7 +61,7 @@ inputSubmit.addEventListener("click", function (e) {
   }
 
   if (inputTextarea.value == "") {
-    inputTextarea.style.borderColor = "red";
+    inputTextarea.style.border = "thick solid red";
     is_empty = true;
     console.log("Textarea is empty");
   } else {
