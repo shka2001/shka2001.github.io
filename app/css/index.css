@@ -28,6 +28,7 @@ img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 p {
   color: #254441;
@@ -54,9 +55,9 @@ p {
 .button {
   display: inline-block;
   padding: 10px 30px;
-  color: white;
-  background-color: #96a9af;
-  border: 2px solid #96a9af;
+  color: #254441;
+  background-color: transparent;
+  border: 2px solid #254441;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -67,8 +68,35 @@ p {
 }
 .button:hover {
   color: white;
-  background-color: #17c3b2;
-  border-color: #17c3b2;
+  background-color: #254441;
+  border-color: #254441;
+}
+
+.aboutme-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "aboutmeimage aboutmetext"
+    "aboutmeskills aboutmeskills"
+    "aboutmebutton aboutmebutton";
+}
+
+.aboutmeimage {
+  grid-area: aboutmeimage;
+}
+
+.aboutmetext {
+  grid-area: aboutmetext;
+}
+
+.aboutmeskills {
+  grid-area: aboutmeskills;
+}
+
+.aboutmebutton {
+  grid-area: aboutmebutton;
 }
 
 .brand h1 {
@@ -271,7 +299,7 @@ p {
 
 #projects .projects {
   flex-direction: column;
-  max-width: 1200px;
+  /*max-width: 1200px;*/
   margin: 0;
   padding: 100px 0;
 }
@@ -285,9 +313,9 @@ p {
   display: grid;
   height: 100%;
   grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 18rem));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 18rem));
   grid-gap: 1rem;
-  padding: 4rem 5.7vw;
+  padding: 4rem 4rem;
   justify-content: center;
 }
 
@@ -477,6 +505,10 @@ p {
   width: 100%;
   position: relative;
   border: 10px solid white;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-top-width: 0px;
 }
 #about .col-left-right .col-left .about-img::after {
   content: "";
@@ -485,9 +517,9 @@ p {
   top: 19px;
   height: 98%;
   width: 98%;
-  border: 7px solid #fdff47;
+  border: 7px solid #17c3b2;
   z-index: -1;
-  background-color: #fdff47;
+  background-color: #17c3b2;
 }
 
 #about .col-left-right .col-right .about-img2 {
@@ -571,6 +603,8 @@ p {
   margin: 0 auto;
   padding: 0;
   background-image: url(/img/fig-contact.png);
+  background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, 0.6);
   background-size: 640px 417px;
   background-attachment: fixed;
   background-position: center 0;
@@ -593,6 +627,7 @@ p {
   flex-direction: column;
   box-shadow: 0px 0px 18px 0 #0000002c;
   transition: 0.3s ease box-shadow;
+  background-color: white;
 }
 #contact .contact-item:hover {
   box-shadow: 0px 0px 5px 0 #0000002c;
@@ -672,8 +707,8 @@ p {
   display: inline-block;
   padding: 10px 30px;
   /*color: white;*/
-  background-color: #96a9af;
-  border: 2px solid #96a9af;
+  background-color: white;
+  border: 2px solid #254441;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -682,12 +717,12 @@ p {
   transition-property: background-color, color;
   margin-left: 130px;
   border-radius: 30px;
-  color: white;
+  color: #254441;
 }
 #input-submit:hover {
   color: white;
-  background-color: #17c3b2;
-  border-color: #17c3b2;
+  background-color: #254441;
+  border-color: #254441;
 }
 
 /*End contact Section */
@@ -782,7 +817,19 @@ p {
     margin-top: 50px;
   }
   .button {
-    margin-top: 220px;
+    margin-top: 300px;
+  }
+
+  #about .col-left-right .col-right .about-img2::after {
+    content: "";
+    position: absolute;
+    right: -220px;
+    top: -1003px;
+    height: 600px;
+    width: 411px;
+    z-index: -1;
+    background-image: url(/img/hanging-cat-small.png);
+    background-size: contain;
   }
 }
 
@@ -799,6 +846,10 @@ p {
   /* Hero */
   #hero h1 {
     font-size: 10rem;
+  }
+
+  .phoneEmailAddress {
+    margin-left: 60px;
   }
   /* End Hero */
 
@@ -845,8 +896,9 @@ p {
     top: 34px;
     height: 98%;
     width: 98%;
-    background-color: #fdff47;
-    background-color: #fdff47;
+    background-color: #17c3b2;
+    background-color: #17c3b2;
+    border-radius: 10px;
   }
   #about .col-right {
     text-align: left;
