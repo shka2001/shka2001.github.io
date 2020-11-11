@@ -730,10 +730,9 @@ p {
   margin: 0 5px;
 }
 #footer .social-item img {
-  /*filter: grayscale(1);
-  transition: 0.3s ease filter;*/
   overflow: hidden;
 }
+/* Icon button hover effect */
 #footer #social-item1:hover img {
   background: url(/img/icons8-facebook-f-64-blue.png) no-repeat;
   width: 60px;
@@ -757,6 +756,7 @@ p {
   width: 60px;
   height: 60px;
 }
+/* End icon button hover effect */
 
 #footer p {
   color: white;
@@ -801,7 +801,6 @@ p {
 /* End Keyframes */
 
 /* Media Query For Phone */
-/*@media screen and (max-width: 480px)*/
 @media (max-width: 480px) and (min-width: 0px) {
   #hero h1 {
     font-size: 4rem;
@@ -826,7 +825,6 @@ p {
 
   #contact .contact-items {
     display: block;
-    /* grid-template-columns: repeat(2, 1fr); */
     padding: 40px;
     align-content: center;
   }
@@ -881,7 +879,6 @@ p {
 }
 
 /* Media Query For Tablet */
-/*@media only screen and (min-width: 768px)*/
 @media (max-width: 769px) and (min-width: 480px) {
   .aboutme-grid {
     display: block;
@@ -902,7 +899,6 @@ p {
   #hero h1 {
     font-size: 6rem;
   }
-
   /* End Hero */
 
   /* Services Section */
@@ -937,7 +933,6 @@ p {
   #about h2 {
     margin-top: 30px;
   }
-
   #about .about {
     flex-direction: column;
   }
@@ -963,21 +958,6 @@ p {
   #about .col-right h1 {
     text-align: left;
   }
-
-  #footer .footer {
-    min-height: 200px;
-    flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 10px;
-  }
-  #footer h2 {
-    color: white;
-    font-weight: 500;
-    font-size: 1.8rem;
-    letter-spacing: 0.1rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
   #about .social-icon {
     display: flex;
     margin-bottom: 30px;
@@ -994,7 +974,6 @@ p {
   #about .social-item:hover img {
     filter: grayscale(0);
   }
-
   /* End About */
 
   /* contact  */
@@ -1034,9 +1013,27 @@ p {
     margin: 10px 0px 0px 25px;
   }
   /* End contact  */
+
+  /* Footer */
+  #footer .footer {
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  #footer h2 {
+    color: white;
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  /* End Footer */
 }
 /* End Media Query For Tablet */
 
+/* Media Query For Note PC */
 @media (max-width: 1200px) and (min-width: 769px) {
   /* Project */
   #projects .project-item {
@@ -1064,6 +1061,8 @@ p {
   }
   /* End Project */
 }
+/* End Media Query For Note PC */
+
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
   /* header */
@@ -1093,5 +1092,4 @@ p {
     margin: 1.5%;
   }
 }
-
 /* End  Media Query For Desktop */
