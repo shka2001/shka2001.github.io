@@ -1,4 +1,4 @@
-Scrum
+1. Scrum
  HOW SCRUM WORKS
   Scrum är en agil metod. Det kännetecknas av att fokus ligger på själva produkten man utvecklar och inte hur man utvecklar den. Arbetet är uppdelat i tidsbestämda iterationer, 
   så kallade sprintar. Dessa perioder kan vara mellan 3 - 30 dagar. Människorna i scrum-teamet är uppdelade i tre roller: Produktägaren, Scrum master och Utvecklingstemet.
@@ -26,7 +26,7 @@ Scrum
 
 
 
-Grafisk profil
+2. Grafisk profil
  Det visuella är ofta det första en potentiell kund upplever vid första mötet med ert företag. 
  En grafisk profil är till för att stärka och tydliggöra varumärkets visuella uttryck och se till att det går hand i hand med företagets värderingar och affärsmässiga mål. 
  En grafisk profil finns ibland en uppfattning om att man gör en grafisk profil för att det ska vara snyggt och till viss del är det sant, 
@@ -37,18 +37,18 @@ Grafisk profil
  Tillsammans skapar det ett karaktäristiskt utseende för Connect Sweden. Detta utseende går igen i alla kanaler – från deras webb till trycksaker. 
 
 
-Tillgänglighet
+3. Tillgänglighet
   1.2.3 (A) Syntolka eller erbjud alternativ till videoinspelningar
     Ställa in alternativ text (alt-attribut) för bilder
     Alternativ text är texten som läses istället när bilderna eller videorna på webbplatsen inte visas av någon anledning, eller när en synskadad person använder en röstbläddrare.
     Jag lade till alt-attributet till img-elementet och skrev den alternativa texten.
 
 
-1.4.10 (AA) Skapa en flexibel layout som fungerar vid förstoring eller liten skärm
+  1.4.10 (AA) Skapa en flexibel layout som fungerar vid förstoring eller liten skärm
     Jag skapade en flexibel layout som fungerar vid förstoring eller liten skärm Skapa en layout som fungerar på både ipad, phone skärm utan att information eller funktionalitet går förlorad, 
     utan scrollning i mer än en riktning. 
 
-1.4.11 (AA) Använd tillräckliga kontraster i komponenter och grafik
+  1.4.11 (AA) Använd tillräckliga kontraster i komponenter och grafik
     Säkerställer kontrast
     Om kontrasten mellan textfärgen och bakgrundsfärgen är svag blir den svår att läsa. Jag undvek liknande färger och försökte få tillräckligt med kontrast.
     Den visuella presentationen av text och textbilder ska ha ett kontrastförhållande på minst 4,5: 1.
@@ -57,10 +57,14 @@ Tillgänglighet
     Med tanke på personer med färgvisionsfunktioner försökte jag undvika att bara uttrycka innehållet med färger. 
     Jag har skapat ett meddelandeformulär så att synskadade kan identifieras inte bara genom färg utan också genom form och storlek.
 
-3.3.1 (A) Visa var ett fel uppstått och beskriv det tydligt
+  3.3.1 (A) Visa var ett fel uppstått och beskriv det tydligt
    Jag visade var ett fel uppstått och beskriv det tydligt Hjälp dina användare när det blir fel på Message form. 
    Användaren kan veta tydligt var felet finns med red rutan men felet beskrivas inte med text eftersom meddelandeformuläret bara kollar på tomma.
 
-2.4.2 (A) Skriv beskrivande sidtitlar
+  2.4.2 (A) Skriv beskrivande sidtitlar
     Jag skriv beskrivande sidtitlar. Det fiins en tydligt beskrivande titel sammanfattar sidans ämne eller innehåll på min websida. 
     Jag tänker att sidorna en beskrivande sidtitel (title)  hjälper du användarna att orientera sig.
+
+
+
+4. “Er rapport ska även innehålla en del där ni diskuterar för- och nackdelar/svårigheter med de olika teknikerna.”
