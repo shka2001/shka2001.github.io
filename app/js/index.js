@@ -45,27 +45,27 @@ console.log(inputSubmit.value);
 inputSubmit.addEventListener("click", function (e) {
   let is_empty = false;
   if (inputName.value == "") {
-    inputName.style.border = "thick solid red";
+    inputName.style.border = "thick solid  #17c3b2";
     is_empty = true;
     console.log("Name is empty");
   } else {
-    inputName.style.border = "black";
+    inputName.style.border = "thin solid black";
   }
 
   if (inputeEmail.value == "") {
-    inputeEmail.style.border = "thick solid red";
+    inputeEmail.style.border = "thick solid  #17c3b2";
     is_empty = true;
     console.log("Email is empty");
   } else {
-    inputeEmail.style.borderColor = "black";
+    inputeEmail.style.border = "thin solid black";
   }
 
   if (inputTextarea.value == "") {
-    inputTextarea.style.border = "thick solid red";
+    inputTextarea.style.border = "thick solid  #17c3b2";
     is_empty = true;
     console.log("Textarea is empty");
   } else {
-    inputTextarea.style.borderColor = "black";
+    inputTextarea.style.borderColor = "thin solid black";
   }
 
   if (!is_empty) {
