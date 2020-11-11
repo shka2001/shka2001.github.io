@@ -68,3 +68,64 @@
 
 
 4. “Er rapport ska även innehålla en del där ni diskuterar för- och nackdelar/svårigheter med de olika teknikerna.”
+    Olika tekniker används i webbutveckling. Typiska exempel är WordPress, CSS och HTML, SASS och SASS.
+
+Först och främst vill jag nämna fördelarna och nackdelarna med WordPress, som används av många människor över hela världen.
+merit
+(1) Stark mot SEO
+(2) Lätt att hantera
+(3) Anpassa fritt
+(4) Enkel platsbyggnad
+(5) Rikliga mallar
+(6) Rikliga plug-ins
+(7) Massor av information
+Demerit
+(1) Visningshastigheten är låg
+(2) Svag säkerhet
+(3) Svårt att bemästra
+
+Jag arbetar faktiskt på distans och hanterar hemsidan för ett japanskt företag med WordPress, och jag håller med om ovanstående fördelar. 
+Men jag tyckte att det var väldigt svårt att använda det från mitt hjärta. Och jag behövde också lite expertis inom HTML och CSS. Dessutom fanns det en del som krävde kunskap om JQuery. 
+För dem som har viss kunskap om CSS är WordPress lite knepigt att använda.Jag gillar CSS mycket mer än WordPress eftersom det känns mer flexibelt när man programmerar designen.
+
+Det finns många fördelar med CSS, men jag tror att det kommer att vara särskilt användbart för designjustering och reflektion när man skapar en webbsida. En av de stora fördelarna med CSS är att du kan ändra design beroende på vilket media som ska visas, till exempel en PC eller smartphone, men det finns också många andra saker. Jag vänjer mig vid CSS, så jag känner mig bekväm.
+merit
+(1) Designen kan ändras på en gång.
+(2) Visningsstilen kan ändras för varje media.
+Demerit
+(1) Reproducerbarheten varierar beroende på webbläsaren.
+(2) Vissa webbläsare stöder det inte.
+Jag gillar CSS mycket mer än WordPress eftersom det känns mer flexibelt när man programmerar designen.
+
+Dessutom tror jag att du kan arbeta mer effektivt med SCSS och SASS. Jag vill ta upp fördelarna och nackdelarna med båda.
+
+SCSS
+merit
+(1) Notationen liknar CSS.
+(2) Det är lätt att förstå eftersom det är kapslat.
+(3) Det är lätt att förstå eftersom det inte använder symboler som @mixin och @include.
+(4) Eftersom det är mainstream finns det mycket information.
+
+Demerit
+(1) Det finns många ingångar som semikolon, parenteser, @mixin och @include.
+(2) Det är lätt att se först, men när det görs blir koden längre och svårare att se.
+(3) Eftersom parenteser används är mängden parenteser i
+
+SASS
+merit
+(1) Antalet rader förkortas eftersom parenteser inte används.
+(2) @mixin och @include representeras av symboler, så inmatningen är enkel.
+(3) Det är lätt att justera indragen eftersom parenteser inte används. (När du inte använder verktyg)
+(4) Utmärkt kompatibilitet när du använder Pug (Jade).
+
+Demerit
+(1) Eftersom det använder indrag är det svårt att förstå om du inte känner till det.
+(2) Eftersom jag använder symboler förstår jag inte innebörden när jag ser det för första gången.
+(3) Det är besvärligt att göra en regel, som att lämna ett mellanslag efter kolon.
+(4) Det finns lite information. Det är lite svårt att få bucklorna. (När du inte använder verktyg)
+
+Till slut undrade jag vilken som skulle vara bekvämare att använda. I själva verket är den nuvarande mainstream SCSS. 
+Att söka efter SASS för att lära sig att använda det dominerades av SCSS-information.
+Men båda är desamma så länge du kommer ihåg skillnaden i notation. 
+I så fall tror jag att det skulle vara effektivare att använda SASS, vilket kräver färre typer. 
+Till slut tycker jag att det är bäst att använda den du gillar, men jag tycker att SASS är bekvämare.
