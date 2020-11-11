@@ -730,12 +730,34 @@ p {
   margin: 0 5px;
 }
 #footer .social-item img {
-  filter: grayscale(1);
-  transition: 0.3s ease filter;
+  /*filter: grayscale(1);
+  transition: 0.3s ease filter;*/
+  overflow: hidden;
 }
-#footer .social-item:hover img {
-  filter: grayscale(0);
+#footer #social-item1:hover img {
+  background: url(/img/icons8-facebook-f-64-blue.png) no-repeat;
+  width: 60px;
+  height: 60px;
 }
+
+#footer #social-item2:hover img {
+  background: url(/img/icons8-instagram-64-blue.png) no-repeat;
+  width: 60px;
+  height: 60px;
+}
+
+#footer #social-item3:hover img {
+  background: url(/img/icons8-github-64-blue.png) no-repeat;
+  width: 60px;
+  height: 60px;
+}
+
+#footer #social-item4:hover img {
+  background: url(/img/icons8-linkedin-2-64-blue.png) no-repeat;
+  width: 60px;
+  height: 60px;
+}
+
 #footer p {
   color: white;
   font-size: 1.3rem;
