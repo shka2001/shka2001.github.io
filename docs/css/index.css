@@ -70,26 +70,6 @@ p {
   background-color: #254441;
   border-color: #254441;
 }
-.aboutme-grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "aboutmeimage aboutmetext";
-  margin: 0px 100px 100px 100px;
-  text-align: center;
-}
-.aboutmeimage {
-  grid-area: aboutmeimage;
-}
-.aboutmetext {
-  grid-area: aboutmetext;
-}
-.aboutmeskills {
-  grid-area: aboutmeskills;
-}
-.aboutmebutton {
-  grid-area: aboutmebutton;
-}
 .brand h1 {
   font-size: 3rem;
   text-transform: uppercase;
@@ -97,6 +77,11 @@ p {
 }
 .brand h1 span {
   color: #17c3b2;
+}
+
+#hero .hero .cat {
+  background-image: url(/img/hanging-cat-small.png);
+  background-size: contain;
 }
 
 /* Header section */
@@ -293,24 +278,29 @@ p {
   background-position: center 0;
   padding: 100px 0px 50px 0px;
 }
-#about .col-left-right {
-  flex-direction: column-reverse;
+#about .aboutme-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "aboutmeimage aboutmetext";
+  margin: 0px 100px 100px 100px;
   text-align: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  height: 600px;
+  position: relative;
 }
-
-#about .col-left-right .col-left {
-  width: 320px;
-  height: 360px;
+#about .aboutmeimage {
+  grid-area: aboutmeimage;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  position: relative;
 }
-#about .col-left-right .col-right {
-  width: 100%;
+#about .aboutmetext {
+  grid-area: aboutmetext;
 }
-.col-left-right .self {
-  width: 20%;
-  height: 50%;
+#about .aboutmeskills {
+  grid-area: aboutmeskills;
+}
+#about .aboutmebutton {
+  grid-area: aboutmebutton;
 }
 #about h2 {
   font-size: 1.8rem;
@@ -334,32 +324,17 @@ p {
   width: 100%;
   position: relative;
 }
-#about .aboutmeimage img::after {
+#about .aboutme-grid .aboutmeimage::after {
   content: "";
   position: absolute;
-  left: -33px;
-  top: 19px;
-  height: 98%;
-  width: 98%;
+  left: -20px;
+  top: 20px;
+  height: calc(100% - 30px);
+  width: calc(100% - 30px);
   border: 7px solid #17c3b2;
   z-index: -1;
   background-color: #17c3b2;
-}
-#about .col-left-right .col-right .about-img2 {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-#about .col-left-right .col-right .about-img2::after {
-  content: "";
-  position: absolute;
-  right: -100px;
-  top: -1015px;
-  height: 740px;
-  width: 410px;
-  /* border: 7px solid #fdff47; */
-  z-index: -1;
-  background-image: url(/img/hanging-cat-4794470_1280.png);
+  border-radius: 10px;
 }
 
 /* Skill Chart */
@@ -780,7 +755,7 @@ p {
   #hero h1 {
     font-size: 4rem;
   }
-  .aboutme-grid {
+  #about .aboutme-grid {
     display: block;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
@@ -816,7 +791,7 @@ p {
 
 /* Media Query For Tablet */
 @media (max-width: 769px) and (min-width: 480px) {
-  .aboutme-grid {
+  #about .aboutme-grid {
     display: block;
     margin: 0px 50px 0px 50px;
   }
