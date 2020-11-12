@@ -414,7 +414,7 @@ p {
 }
 
 .circular-chart.orange .circle {
-  stroke: #fdff47;
+  stroke: #485563;
 }
 
 .circular-chart.green .circle {
@@ -501,9 +501,14 @@ p {
   box-shadow: 10px 30px 60px 0 rgba(0, 0, 0, 0.1);
 }
 
-#projects .project-card p,
+#projects .project-card p {
+  margin: 0 10px;
+  color: #485563;
+}
+
 #projects .project-card h2 {
   margin: 0 10px;
+  color: #254441;
 }
 
 #projects .project-card .project-category {
@@ -541,7 +546,7 @@ p {
 }
 
 #projects .project-main-card .project-title {
-  margin-top: -30px;
+  margin-top: -10px;
   font-size: 4.2rem;
   /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;*/
@@ -551,7 +556,7 @@ p {
 #projects .project-main-card .project-category {
   margin-top: 0%;
   font-size: 1.2rem;
-  color: white;
+  color: #485563;
   font-weight: 700;
 }
 #projects .project-category {
