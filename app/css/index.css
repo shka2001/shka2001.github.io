@@ -51,7 +51,6 @@ p {
 .section-title span {
   color: #17c3b2;
 }
-
 .button {
   display: inline-block;
   padding: 10px 30px;
@@ -71,7 +70,6 @@ p {
   background-color: #254441;
   border-color: #254441;
 }
-
 .aboutme-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -80,23 +78,18 @@ p {
   margin: 0px 100px 100px 100px;
   text-align: center;
 }
-
 .aboutmeimage {
   grid-area: aboutmeimage;
 }
-
 .aboutmetext {
   grid-area: aboutmetext;
 }
-
 .aboutmeskills {
   grid-area: aboutmeskills;
 }
-
 .aboutmebutton {
   grid-area: aboutmebutton;
 }
-
 .brand h1 {
   font-size: 3rem;
   text-transform: uppercase;
@@ -248,7 +241,6 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  /*background-color: black;*/
   opacity: 0.7;
   z-index: -1;
 }
@@ -273,7 +265,6 @@ p {
 #hero h1:nth-child(2) {
   animation-delay: 2s;
 }
-
 #hero h1 span {
   position: absolute;
   top: 0;
@@ -295,7 +286,6 @@ p {
 /* About Section */
 #about .about {
   flex-direction: column;
-  /*max-width: 1200px;*/
   margin: 0 auto;
   padding: 0;
   background-size: 640px 417px;
@@ -303,13 +293,11 @@ p {
   background-position: center 0;
   padding: 100px 0px 50px 0px;
 }
-
 #about .col-left-right {
   flex-direction: column-reverse;
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
-  /*padding: 100px 20px;*/
   height: 600px;
 }
 
@@ -320,7 +308,6 @@ p {
 #about .col-left-right .col-right {
   width: 100%;
 }
-
 .col-left-right .self {
   width: 20%;
   height: 50%;
@@ -358,7 +345,6 @@ p {
   z-index: -1;
   background-color: #17c3b2;
 }
-
 #about .col-left-right .col-right .about-img2 {
   height: 100%;
   width: 100%;
@@ -381,19 +367,16 @@ p {
   display: flex;
   flex-flow: row nowrap;
 }
-
 .single-chart {
   width: 33%;
   justify-content: space-around;
 }
-
 .circular-chart {
   display: block;
   margin: 10px auto;
   max-width: 50%;
   max-height: 250px;
 }
-
 .circle-bg {
   fill: none;
   /*stroke: #eee;*/
@@ -542,7 +525,7 @@ p {
   border-radius: 10px;
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 150px;
 }
 
 #projects .project-main-card .project-title {
