@@ -43,7 +43,6 @@ p {
   line-height: 2.5rem;
   font-weight: 300;
   letter-spacing: 0.05rem;
-  text-indent: 1em;
 }
 .section-title {
   font-size: 4rem;
@@ -83,6 +82,9 @@ p {
 }
 .brand h1 span {
   color: $blue;
+}
+a:visited {
+  color: $green;
 }
 
 /* Header section */
@@ -546,7 +548,7 @@ p {
       margin-top: 0%;
       font-size: 1.5rem;
       color: $gray;
-      font-weight: 700;
+      font-weight: 300;
     }
   }
 }
@@ -703,25 +705,25 @@ p {
   }
 
   /* Icon button hover effect */
-  #footer #social-item1:hover img {
+  #social-item1:hover img {
     background: url(/img/icons8-facebook-f-64-blue.png) no-repeat;
     width: 60px;
     height: 60px;
   }
 
-  #footer #social-item2:hover img {
+  #social-item2:hover img {
     background: url(/img/icons8-instagram-64-blue.png) no-repeat;
     width: 60px;
     height: 60px;
   }
 
-  #footer #social-item3:hover img {
+  #social-item3:hover img {
     background: url(/img/icons8-github-64-blue.png) no-repeat;
     width: 60px;
     height: 60px;
   }
 
-  #footer #social-item4:hover img {
+  #social-item4:hover img {
     background: url(/img/icons8-linkedin-2-64-blue.png) no-repeat;
     width: 60px;
     height: 60px;

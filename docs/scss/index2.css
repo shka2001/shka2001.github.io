@@ -36,8 +36,7 @@ p {
   margin-top: 5px;
   line-height: 2.5rem;
   font-weight: 300;
-  letter-spacing: 0.05rem;
-  text-indent: 1em; }
+  letter-spacing: 0.05rem; }
 
 .section-title {
   font-size: 4rem;
@@ -77,6 +76,9 @@ p {
 
 .brand h1 span {
   color: #17c3b2; }
+
+a:visited {
+  color: #254441; }
 
 /* Header section */
 #header {
@@ -419,7 +421,7 @@ p {
     margin-top: 0%;
     font-size: 1.5rem;
     color: #485563;
-    font-weight: 700; }
+    font-weight: 300; }
 
 /* End Projects section */
 /* Contact Section */
@@ -542,19 +544,19 @@ p {
     margin: 0 5px; }
     #footer .social-item img {
       overflow: hidden; }
-  #footer #footer #social-item1:hover img {
+  #footer #social-item1:hover img {
     background: url(/img/icons8-facebook-f-64-blue.png) no-repeat;
     width: 60px;
     height: 60px; }
-  #footer #footer #social-item2:hover img {
+  #footer #social-item2:hover img {
     background: url(/img/icons8-instagram-64-blue.png) no-repeat;
     width: 60px;
     height: 60px; }
-  #footer #footer #social-item3:hover img {
+  #footer #social-item3:hover img {
     background: url(/img/icons8-github-64-blue.png) no-repeat;
     width: 60px;
     height: 60px; }
-  #footer #footer #social-item4:hover img {
+  #footer #social-item4:hover img {
     background: url(/img/icons8-linkedin-2-64-blue.png) no-repeat;
     width: 60px;
     height: 60px; }
