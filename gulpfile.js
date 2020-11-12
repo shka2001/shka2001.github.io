@@ -39,7 +39,7 @@ gulp.task("build-pdf", function () {
 });
 
 gulp.task("build-sass", function () {
-  return gulp.src("app/scss/*.scss").pipe(sass()).pipe(gulp.dest("docs/css/"));
+  return gulp.src("app/scss/*.scss").pipe(sass()).pipe(gulp.dest("docs/scss/"));
 });
 
 gulp.task("build-html", function () {
