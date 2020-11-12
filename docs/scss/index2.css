@@ -115,31 +115,31 @@ p {
     transition: 0.5s ease left; }
     #header .nav-list ul.active {
       left: 0vw; }
-  #header .nav-list a {
-    font-size: 2.5rem;
-    font-weight: 500;
-    letter-spacing: 0.2rem;
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    padding: 20px;
-    display: block; }
-  #header .nav-list a::after {
-    content: attr(data-after);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    color: rgba(240, 248, 255, 0.021);
-    font-size: 13rem;
-    letter-spacing: 50px;
-    z-index: -1;
-    transition: 0.3s ease letter-spacing; }
-  #header .nav-list li:hover a::after {
-    transform: translate(-50%, -50%) scale(1);
-    letter-spacing: initial; }
-  #header .nav-list li:hover a {
-    color: #17c3b2; }
+    #header .nav-list ul a {
+      font-size: 2.5rem;
+      font-weight: 500;
+      letter-spacing: 0.2rem;
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      padding: 20px;
+      display: block; }
+    #header .nav-list ul a::after {
+      content: attr(data-after);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      color: rgba(240, 248, 255, 0.021);
+      font-size: 13rem;
+      letter-spacing: 50px;
+      z-index: -1;
+      transition: 0.3s ease letter-spacing; }
+    #header .nav-list ul li:hover a::after {
+      transform: translate(-50%, -50%) scale(1);
+      letter-spacing: initial; }
+    #header .nav-list ul li:hover a {
+      color: #17c3b2; }
   #header .hamburger {
     height: 60px;
     width: 60px;
@@ -168,8 +168,7 @@ p {
       position: relative;
       background-color: white;
       z-index: -1; }
-      #header .hamburger .bar ::after,
-      #header .hamburger .bar ::before {
+      #header .hamburger .bar::after, #header .hamburger .bar::before {
         content: "";
         position: absolute;
         height: 100%;
@@ -178,9 +177,9 @@ p {
         background-color: white;
         transition: 0.3s ease;
         transition-property: top, bottom; }
-      #header .hamburger .bar ::after {
+      #header .hamburger .bar::after {
         top: 8px; }
-      #header .hamburger .bar ::before {
+      #header .hamburger .bar::before {
         bottom: 8px; }
     #header .hamburger.active .bar::before {
       bottom: 0; }

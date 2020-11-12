@@ -130,39 +130,39 @@ p {
       &.active {
         left: 0vw;
       }
-    }
 
-    a {
-      font-size: 2.5rem;
-      font-weight: 500;
-      letter-spacing: 0.2rem;
-      text-decoration: none;
-      color: white;
-      text-transform: uppercase;
-      padding: 20px;
-      display: block;
-    }
+      a {
+        font-size: 2.5rem;
+        font-weight: 500;
+        letter-spacing: 0.2rem;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        padding: 20px;
+        display: block;
+      }
 
-    a::after {
-      content: attr(data-after);
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(0);
-      color: rgba(240, 248, 255, 0.021);
-      font-size: 13rem;
-      letter-spacing: 50px;
-      z-index: -1;
-      transition: 0.3s ease letter-spacing;
-    }
+      a::after {
+        content: attr(data-after);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        color: rgba(240, 248, 255, 0.021);
+        font-size: 13rem;
+        letter-spacing: 50px;
+        z-index: -1;
+        transition: 0.3s ease letter-spacing;
+      }
 
-    li:hover a::after {
-      transform: translate(-50%, -50%) scale(1);
-      letter-spacing: initial;
-    }
+      li:hover a::after {
+        transform: translate(-50%, -50%) scale(1);
+        letter-spacing: initial;
+      }
 
-    li:hover a {
-      color: $blue;
+      li:hover a {
+        color: $blue;
+      }
     }
   }
 
@@ -198,8 +198,8 @@ p {
       background-color: white;
       z-index: -1;
 
-      ::after,
-      ::before {
+      &::after,
+      &::before {
         content: "";
         position: absolute;
         height: 100%;
@@ -210,11 +210,11 @@ p {
         transition-property: top, bottom;
       }
 
-      ::after {
+      &::after {
         top: 8px;
       }
 
-      ::before {
+      &::before {
         bottom: 8px;
       }
     }
