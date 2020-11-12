@@ -51,7 +51,6 @@ p {
 .section-title span {
   color: #17c3b2;
 }
-
 .button {
   display: inline-block;
   padding: 10px 30px;
@@ -71,7 +70,6 @@ p {
   background-color: #254441;
   border-color: #254441;
 }
-
 .aboutme-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -80,23 +78,18 @@ p {
   margin: 0px 100px 100px 100px;
   text-align: center;
 }
-
 .aboutmeimage {
   grid-area: aboutmeimage;
 }
-
 .aboutmetext {
   grid-area: aboutmetext;
 }
-
 .aboutmeskills {
   grid-area: aboutmeskills;
 }
-
 .aboutmebutton {
   grid-area: aboutmebutton;
 }
-
 .brand h1 {
   font-size: 3rem;
   text-transform: uppercase;
@@ -248,7 +241,6 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  /*background-color: black;*/
   opacity: 0.7;
   z-index: -1;
 }
@@ -273,7 +265,6 @@ p {
 #hero h1:nth-child(2) {
   animation-delay: 2s;
 }
-
 #hero h1 span {
   position: absolute;
   top: 0;
@@ -295,7 +286,6 @@ p {
 /* About Section */
 #about .about {
   flex-direction: column;
-  /*max-width: 1200px;*/
   margin: 0 auto;
   padding: 0;
   background-size: 640px 417px;
@@ -303,13 +293,11 @@ p {
   background-position: center 0;
   padding: 100px 0px 50px 0px;
 }
-
 #about .col-left-right {
   flex-direction: column-reverse;
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
-  /*padding: 100px 20px;*/
   height: 600px;
 }
 
@@ -320,7 +308,6 @@ p {
 #about .col-left-right .col-right {
   width: 100%;
 }
-
 .col-left-right .self {
   width: 20%;
   height: 50%;
@@ -358,7 +345,6 @@ p {
   z-index: -1;
   background-color: #17c3b2;
 }
-
 #about .col-left-right .col-right .about-img2 {
   height: 100%;
   width: 100%;
@@ -381,19 +367,16 @@ p {
   display: flex;
   flex-flow: row nowrap;
 }
-
 .single-chart {
   width: 33%;
   justify-content: space-around;
 }
-
 .circular-chart {
   display: block;
   margin: 10px auto;
   max-width: 50%;
   max-height: 250px;
 }
-
 .circle-bg {
   fill: none;
   /*stroke: #eee;*/
@@ -530,7 +513,6 @@ p {
   font-size: 0.9 rem;
   color: #485563;
 }
-
 #projects .project-card i {
   position: absolute;
   bottom: 10px;
@@ -542,9 +524,8 @@ p {
   border-radius: 10px;
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 150px;
 }
-
 #projects .project-main-card .project-title {
   margin-top: -10px;
   font-size: 4.2rem;
@@ -552,7 +533,6 @@ p {
     1px 1px 0 #000;*/
   color: #254441;
 }
-
 #projects .project-main-card .project-category {
   margin-top: 0%;
   font-size: 1.2rem;
@@ -562,7 +542,6 @@ p {
 #projects .project-category {
   position: relative;
 }
-
 #projects .project-main-card i {
   position: absolute;
   right: 40px;
@@ -570,7 +549,6 @@ p {
   font-size: 1.8rem;
   color: white;
 }
-
 #projects .project-main-card .project-category span::before {
   position: absolute;
   top: 30px;
@@ -578,13 +556,11 @@ p {
   font-weight: 400;
   font-size: 1rem;
 }
-
 #projects .project-main-card .project-category span {
   position: relative;
   /*float: right;*/
   font-size: 1.5rem;
 }
-
 #projects .project-main-card .project-description {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -673,7 +649,6 @@ p {
   padding: 10px;
   color: #485563;
 }
-
 .contact-form {
   position: relative;
   height: 40rem;
@@ -685,7 +660,6 @@ p {
   padding: 0 20px;
   margin-top: -40px;
 }
-
 #contact .contact-items .buttom {
   display: inline-block;
   padding: 10px 30px;
@@ -743,19 +717,16 @@ p {
   width: 60px;
   height: 60px;
 }
-
 #footer #social-item2:hover img {
   background: url(/img/icons8-instagram-64-blue.png) no-repeat;
   width: 60px;
   height: 60px;
 }
-
 #footer #social-item3:hover img {
   background: url(/img/icons8-github-64-blue.png) no-repeat;
   width: 60px;
   height: 60px;
 }
-
 #footer #social-item4:hover img {
   background: url(/img/icons8-linkedin-2-64-blue.png) no-repeat;
   width: 60px;
@@ -790,7 +761,6 @@ p {
     left: 100%;
   }
 }
-
 @keyframes text_reveal {
   100% {
     font-family: "Pacifico", cursive;
@@ -810,7 +780,6 @@ p {
   #hero h1 {
     font-size: 4rem;
   }
-
   .aboutme-grid {
     display: block;
     grid-template-columns: 1fr 2fr;
@@ -819,64 +788,26 @@ p {
     margin: 0px 10px 0px 10px;
     text-align: center;
   }
-
   #about h2 {
     margin-top: 20px;
   }
-
   #projects .project-card {
     grid-column: span 2;
   }
-
   #contact .contact-items {
     display: block;
     padding: 40px;
     align-content: center;
   }
-
   #contact .contact {
     padding: 100px 0px 100px 0px;
   }
-
   .contact-form {
     width: auto;
   }
-
   .section-title h5 {
     margin-top: 100px;
   }
-  /*#projects .all-projects {
-    display: block;
-  }*/
-
-  /*#contact .contact-items {
-    display: grid;
-    grid-template-columns: initial;
-  }*/
-
-  /*#about .col-left-right .col-right h2 {
-    font-size: 1.8rem;
-    font-weight: 500;
-    letter-spacing: 0.2rem;
-    margin-bottom: 10px;
-    margin-top: 50px;
-  }
-  .button {
-    margin-top: 300px;
-  }
-
-  #about .col-left-right .col-right .about-img2::after {
-    content: "";
-    position: absolute;
-    right: -220px;
-    top: -1003px;
-    height: 600px;
-    width: 411px;
-    z-index: -1;
-    background-image: url(/img/hanging-cat-small.png);
-    background-size: contain;
-  }*/
-
   #contact .contact-items .phoneEmailAddress .contact-item {
     width: auto;
     margin: 10px 30px 10px 30px;
@@ -889,13 +820,11 @@ p {
     display: block;
     margin: 0px 50px 0px 50px;
   }
-
   .button {
     font-size: 2.5rem;
     padding: 10px 30px 10px 30px;
     margin: 20px 20px 0px 40px;
   }
-
   h1.section-title {
     font-size: 6rem;
   }
@@ -992,13 +921,11 @@ p {
   #contact .contact-items {
     width: 100%;
     display: flex;
-    /*flex-direction: column;*/
     justify-content: space-evenly;
     margin: 0;
   }
   #contact .contact-item {
     width: 85%;
-    /*margin: 0;*/
     flex-direction: row;
   }
   #contact .contact-item .icon {
@@ -1044,11 +971,9 @@ p {
   #projects .project-item {
     flex-direction: row;
   }
-
   #projects .all-projects {
     grid-template-columns: 200px 200px 1fr 1fr;
   }
-
   #projects .project-item:nth-child(even) {
     flex-direction: row-reverse;
   }
