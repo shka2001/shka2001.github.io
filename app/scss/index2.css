@@ -526,7 +526,7 @@ p {
   padding: 100px 0;
 }
 
-#projects .projects .all-projects {
+#projects .all-projects {
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -542,8 +542,8 @@ p {
           justify-content: center;
 }
 
-#projects .projects #projects .project-card:hover,
-#projects .projects .project-main-card:hover {
+#projects .project-card:hover,
+#projects .project-main-card:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   -webkit-transform-origin: center;
@@ -552,7 +552,7 @@ p {
           box-shadow: 10px 30px 60px 0 rgba(0, 0, 0, 0.1);
 }
 
-#projects .projects .project-main-card {
+#projects .project-main-card {
   padding: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -574,7 +574,7 @@ p {
   background-size: cover;
 }
 
-#projects .projects .project-main-card ::before {
+#projects .project-main-card::before {
   position: absolute;
   content: "";
   top: 0;
@@ -584,7 +584,7 @@ p {
   opacity: 0.4;
 }
 
-#projects .projects .project-main-card .project-description {
+#projects .project-main-card .project-description {
   margin-top: 60px;
   margin-bottom: 60px;
   color: white;
@@ -592,7 +592,7 @@ p {
   font-weight: 400;
 }
 
-#projects .projects .project-card {
+#projects .project-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -612,33 +612,33 @@ p {
   border-radius: 10px;
 }
 
-#projects .projects .project-card p {
+#projects .project-card p {
   margin: 0 10px;
   color: #485563;
 }
 
-#projects .projects .project-card h2 {
+#projects .project-card h2 {
   margin: 0 10px;
   color: #254441;
 }
 
-#projects .projects .project-card .project-date {
+#projects .project-card .project-date {
   margin-top: auto;
   margin-bottom: 10px;
 }
 
-#projects .projects .project-card h2 {
+#projects .project-card h2 {
   font-weight: 700;
   margin-top: 10px;
 }
 
-#projects .projects .project-card .project-description {
+#projects .project-card .project-description {
   margin-top: 10px;
   font-size: 0.9 rem;
   color: #485563;
 }
 
-#projects .projects .project-card img {
+#projects .project-card img {
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -646,7 +646,7 @@ p {
   height: 150px;
 }
 
-#projects .projects .project-card .project-date {
+#projects .project-card .project-date {
   margin-top: 0%;
   font-size: 1.5rem;
   color: #485563;
@@ -670,7 +670,7 @@ p {
   background-position: center 0;
 }
 
-#contact .contact .contact-items {
+#contact .contact-items {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -678,7 +678,7 @@ p {
   padding: 40px;
 }
 
-#contact .contact .contact-items .phoneEmailAddress .contact-item {
+#contact .contact-items .phoneEmailAddress .contact-item {
   width: 85%;
   padding: 20px;
   text-align: center;
@@ -705,12 +705,12 @@ p {
   background-color: white;
 }
 
-#contact .contact .contact-items .phoneEmailAddress .contact-item .phoneEmailAddress .contact-item:hover {
+#contact .contact-items .phoneEmailAddress .contact-item:hover {
   -webkit-box-shadow: 0px 0px 5px 0 #0000002c;
           box-shadow: 0px 0px 5px 0 #0000002c;
 }
 
-#contact .contact .contact-items .contact-us {
+#contact .contact-items .contact-us {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -722,30 +722,30 @@ p {
   text-align: center;
 }
 
-#contact .contact .contact-items .contact-us .section-title {
+#contact .contact-items .contact-us .section-title {
   margin-bottom: 3rem;
 }
 
-#contact .contact .contact-items .contact-form * {
+#contact .contact-items .contact-form * {
   width: 100%;
   margin-top: 50px;
 }
 
-#contact .contact .contact-items .contact-form input {
+#contact .contact-items .contact-form input {
   height: 40px;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid #485563;
 }
 
-#contact .contact .contact-items .textarea {
+#contact .contact-items .textarea {
   border-radius: 10px;
   border: 1px solid #485563;
   padding: 10px;
   color: #485563;
 }
 
-#contact .contact .contact-items .buttom {
+#contact .contact-items .buttom {
   display: inline-block;
   padding: 10px 30px;
   background-color: white;
@@ -762,31 +762,31 @@ p {
   color: #254441;
 }
 
-#contact .contact .contact-items .button:hover {
+#contact .contact-items .button:hover {
   color: white;
   background-color: #254441;
   border-color: #254441;
 }
 
-#contact .contact .icon {
+#contact .icon {
   width: 70px;
   margin: 0 auto;
   margin-bottom: 10px;
 }
 
-#contact .contact .contact-info h1 {
+#contact .contact-info h1 {
   font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 5px;
 }
 
-#contact .contact .contact-info h2 {
+#contact .contact-info h2 {
   font-size: 1.3rem;
   line-height: 2rem;
   font-weight: 500;
 }
 
-#contact .contact .contact-form {
+#contact .contact-form {
   position: relative;
   height: 40rem;
   width: 40rem;

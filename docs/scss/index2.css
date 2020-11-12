@@ -338,84 +338,88 @@ p {
   flex-direction: column;
   margin: 0;
   padding: 100px 0; }
-  #projects .projects .all-projects {
-    position: relative;
-    display: grid;
-    height: 100%;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 18rem));
-    grid-gap: 1rem;
-    padding: 4rem 4rem;
-    justify-content: center; }
-  #projects .projects #projects .project-card:hover,
-  #projects .projects .project-main-card:hover {
-    transform: scale(1.02);
-    transform-origin: center;
-    box-shadow: 10px 30px 60px 0 rgba(0, 0, 0, 0.1); }
-  #projects .projects .project-main-card {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    grid-row: span 2;
-    grid-column: span 2;
-    height: 61rem;
-    box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.1), 0 6px 12px 0 rgba(0, 0, 0, 0.1);
-    transition: all 250ms ease-in-out;
+
+#projects .all-projects {
+  position: relative;
+  display: grid;
+  height: 100%;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 18rem));
+  grid-gap: 1rem;
+  padding: 4rem 4rem;
+  justify-content: center; }
+
+#projects .project-card:hover,
+#projects .project-main-card:hover {
+  transform: scale(1.02);
+  transform-origin: center;
+  box-shadow: 10px 30px 60px 0 rgba(0, 0, 0, 0.1); }
+
+#projects .project-main-card {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  grid-row: span 2;
+  grid-column: span 2;
+  height: 61rem;
+  box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.1), 0 6px 12px 0 rgba(0, 0, 0, 0.1);
+  transition: all 250ms ease-in-out;
+  border-radius: 10px;
+  background: url("/img/yatzy1.jpg") no-repeat center center;
+  background-size: cover; }
+  #projects .project-main-card::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.4; }
+  #projects .project-main-card .project-description {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400; }
+
+#projects .project-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  grid-row: span 1;
+  grid-column: span 1;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1), 0 6px 60px 0 rgba(0, 0, 0, 0.1);
+  transition: all 250ms ease-in-out;
+  border-radius: 10px; }
+  #projects .project-card p {
+    margin: 0 10px;
+    color: #485563; }
+  #projects .project-card h2 {
+    margin: 0 10px;
+    color: #254441; }
+  #projects .project-card .project-date {
+    margin-top: auto;
+    margin-bottom: 10px; }
+  #projects .project-card h2 {
+    font-weight: 700;
+    margin-top: 10px; }
+  #projects .project-card .project-description {
+    margin-top: 10px;
+    font-size: 0.9 rem;
+    color: #485563; }
+  #projects .project-card img {
     border-radius: 10px;
-    background: url("/img/yatzy1.jpg") no-repeat center center;
-    background-size: cover; }
-    #projects .projects .project-main-card ::before {
-      position: absolute;
-      content: "";
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      opacity: 0.4; }
-    #projects .projects .project-main-card .project-description {
-      margin-top: 60px;
-      margin-bottom: 60px;
-      color: white;
-      font-size: 1.2rem;
-      font-weight: 400; }
-  #projects .projects .project-card {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    object-fit: cover;
     width: 100%;
-    height: 30rem;
-    grid-row: span 1;
-    grid-column: span 1;
-    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1), 0 6px 60px 0 rgba(0, 0, 0, 0.1);
-    transition: all 250ms ease-in-out;
-    border-radius: 10px; }
-    #projects .projects .project-card p {
-      margin: 0 10px;
-      color: #485563; }
-    #projects .projects .project-card h2 {
-      margin: 0 10px;
-      color: #254441; }
-    #projects .projects .project-card .project-date {
-      margin-top: auto;
-      margin-bottom: 10px; }
-    #projects .projects .project-card h2 {
-      font-weight: 700;
-      margin-top: 10px; }
-    #projects .projects .project-card .project-description {
-      margin-top: 10px;
-      font-size: 0.9 rem;
-      color: #485563; }
-    #projects .projects .project-card img {
-      border-radius: 10px;
-      object-fit: cover;
-      width: 100%;
-      height: 150px; }
-    #projects .projects .project-card .project-date {
-      margin-top: 0%;
-      font-size: 1.5rem;
-      color: #485563;
-      font-weight: 700; }
+    height: 150px; }
+  #projects .project-card .project-date {
+    margin-top: 0%;
+    font-size: 1.5rem;
+    color: #485563;
+    font-weight: 700; }
 
 /* End Projects section */
 /* Contact Section */
@@ -429,85 +433,90 @@ p {
   background-size: 640px 417px;
   background-attachment: fixed;
   background-position: center 0; }
-  #contact .contact .contact-items {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 40px; }
-    #contact .contact .contact-items .phoneEmailAddress .contact-item {
-      width: 85%;
-      padding: 20px;
-      text-align: center;
-      border-radius: 10px;
-      padding: 30px;
-      margin: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      box-shadow: 0px 0px 18px 0 #0000002c;
-      transition: 0.3s ease box-shadow;
-      background-color: white; }
-      #contact .contact .contact-items .phoneEmailAddress .contact-item .phoneEmailAddress .contact-item:hover {
-        box-shadow: 0px 0px 5px 0 #0000002c; }
-    #contact .contact .contact-items .contact-us {
-      justify-content: center;
-      flex-wrap: wrap;
-      align-items: center;
-      text-align: center; }
-    #contact .contact .contact-items .contact-us .section-title {
-      margin-bottom: 3rem; }
-    #contact .contact .contact-items .contact-form * {
-      width: 100%;
-      margin-top: 50px; }
-    #contact .contact .contact-items .contact-form input {
-      height: 40px;
-      padding: 10px;
-      border-radius: 10px;
-      border: 1px solid #485563; }
-    #contact .contact .contact-items .textarea {
-      border-radius: 10px;
-      border: 1px solid #485563;
-      padding: 10px;
-      color: #485563; }
-    #contact .contact .contact-items .buttom {
-      display: inline-block;
-      padding: 10px 30px;
-      background-color: white;
-      border: 2px solid #254441;
-      font-size: 2rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1rem;
-      margin-top: 50px;
-      transition: 0.3s ease;
-      transition-property: background-color, color;
-      border-radius: 30px;
-      color: #254441; }
-    #contact .contact .contact-items .button:hover {
-      color: white;
-      background-color: #254441;
-      border-color: #254441; }
-  #contact .contact .icon {
-    width: 70px;
-    margin: 0 auto;
-    margin-bottom: 10px; }
-  #contact .contact .contact-info h1 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin-bottom: 5px; }
-  #contact .contact .contact-info h2 {
-    font-size: 1.3rem;
-    line-height: 2rem;
-    font-weight: 500; }
-  #contact .contact .contact-form {
-    position: relative;
-    height: 40rem;
-    width: 40rem;
-    align-items: center;
+
+#contact .contact-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px; }
+  #contact .contact-items .phoneEmailAddress .contact-item {
+    width: 85%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    padding: 0 20px;
-    margin-top: -40px; }
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: 0.3s ease box-shadow;
+    background-color: white; }
+    #contact .contact-items .phoneEmailAddress .contact-item:hover {
+      box-shadow: 0px 0px 5px 0 #0000002c; }
+  #contact .contact-items .contact-us {
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center; }
+  #contact .contact-items .contact-us .section-title {
+    margin-bottom: 3rem; }
+  #contact .contact-items .contact-form * {
+    width: 100%;
+    margin-top: 50px; }
+  #contact .contact-items .contact-form input {
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #485563; }
+  #contact .contact-items .textarea {
+    border-radius: 10px;
+    border: 1px solid #485563;
+    padding: 10px;
+    color: #485563; }
+  #contact .contact-items .buttom {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: white;
+    border: 2px solid #254441;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 50px;
+    transition: 0.3s ease;
+    transition-property: background-color, color;
+    border-radius: 30px;
+    color: #254441; }
+  #contact .contact-items .button:hover {
+    color: white;
+    background-color: #254441;
+    border-color: #254441; }
+
+#contact .icon {
+  width: 70px;
+  margin: 0 auto;
+  margin-bottom: 10px; }
+
+#contact .contact-info h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 5px; }
+
+#contact .contact-info h2 {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 500; }
+
+#contact .contact-form {
+  position: relative;
+  height: 40rem;
+  width: 40rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  margin-top: -40px; }
 
 /*End Contact Section */
 /* Footer */
