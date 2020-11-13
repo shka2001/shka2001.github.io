@@ -1,4 +1,8 @@
 1. Scrum
+ Jag tror att scrum kan förklaras enligt följande. 
+ Bland dem tycker jag att dessa två som är Sprint Planning och Daily Scrum är viktiga eftersom jag kände det när jag faktiskt arbetade i en grupp.
+ Jag tycker det är viktigt att ha en daglig scrum, som att diskutera och besluta i en grupp, och att hjälpa varandra när det finns ett problem.
+
  HOW SCRUM WORKS
   Scrum är en agil metod. Det kännetecknas av att fokus ligger på själva produkten man utvecklar och inte hur man utvecklar den. Arbetet är uppdelat i tidsbestämda iterationer, 
   så kallade sprintar. Dessa perioder kan vara mellan 3 - 30 dagar. Människorna i scrum-teamet är uppdelade i tre roller: Produktägaren, Scrum master och Utvecklingstemet.
@@ -25,7 +29,6 @@
  Nu är denna sprinten klar och ett nytt sprint planning möte hålls.
 
 
-
 2. Grafisk profil
  Det visuella är ofta det första en potentiell kund upplever vid första mötet med ert företag. 
  En grafisk profil är till för att stärka och tydliggöra varumärkets visuella uttryck och se till att det går hand i hand med företagets värderingar och affärsmässiga mål. 
@@ -35,7 +38,7 @@
  En grafisk profil behöver man eftersom en grafisk profil sparar tid och pengar genom att man kan använda sin tid mer effektivt.
  Exempel på grafiska profiler Connect Swedens grafiska profil består i grunden av deras logotyp, typsnitt, färger, illustrationer och bildspråk. 
  Tillsammans skapar det ett karaktäristiskt utseende för Connect Sweden. Detta utseende går igen i alla kanaler – från deras webb till trycksaker. 
-
+ Grafisk profil är så nära släkt på många ställen att jag tror att vi måste tänka på allvar över Grafisk profil.
 
 3. Tillgänglighet
   1.2.3 (A) Syntolka eller erbjud alternativ till videoinspelningar
