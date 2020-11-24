@@ -15,9 +15,9 @@ hamburger.addEventListener("click", () => {
 document.addEventListener("scroll", () => {
   var scroll_position = window.scrollY;
   if (scroll_position > 250) {
-    header.style.backgroundColor = "#485563";
+    header.style.backgroundColor = "#26302E";
   } else {
-    header.style.backgroundColor = "#254441";
+    header.style.backgroundColor = "#77898C";
   }
 });
 
@@ -64,4 +64,12 @@ inputSubmit.addEventListener("click", function (e) {
   if (!is_empty) {
     window.location.assign("/sent.html");
   }
+});
+
+let HangingCats = document.getElementById("HangingCats");
+HangingCats.addEventListener("mousemove", function (event) {
+  let bcr = this.getBoundingClientRect();
+  let percentage = (event.clientX - bcr.left) / bcr.width;
+  let Blackcat = document.getElementById("Blackcat");
+  Blackcat.style.width = Math.round(percentage * 100.0) + "%";
 });
