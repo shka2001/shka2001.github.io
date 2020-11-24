@@ -304,7 +304,7 @@ p {
   background-size: 640px 417px;
   background-attachment: fixed;
   background-position: center 0;
-  padding: 100px 0px 50px 0px;
+  padding: 100px 0px 100px 0px;
 }
 #about .aboutme-grid {
   display: grid;
@@ -365,7 +365,7 @@ p {
   content: "";
   position: absolute;
   left: -20px;
-  top: 20px;
+  top: 50px;
   height: calc(100% - 30px);
   width: calc(100% - 30px);
   /*border: 7px solid #26bee2;*/
