@@ -343,12 +343,13 @@ p {
   padding: 10px 30px 0px 30px;
   color: #26302e;
   text-align: justify;
+  text-indent: 1em;
 }
 #about h3 {
   font-size: 1.3rem;
   line-height: 2rem;
   font-weight: 500;
-  color: ##26302e;
+  color: #26302e;
 }
 #about .button {
   margin-bottom: 0px;
