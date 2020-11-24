@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 * {
   padding: 0;
@@ -28,47 +28,47 @@ img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  /*border-radius: 10px;*/
 }
 p {
-  color: #254441;
+  color: #26302e;
   font-size: 1.4rem;
   margin-top: 5px;
   line-height: 2.5rem;
   font-weight: 300;
   letter-spacing: 0.05rem;
-  text-indent: 1em;
+  /*text-indent: 1em;*/
 }
 .section-title {
   font-size: 4rem;
   font-weight: 600;
-  color: #254441;
+  color: #26302e;
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-align: center;
 }
 .section-title span {
-  color: #17c3b2;
+  color: #26bee2;
 }
 .button {
   display: inline-block;
   padding: 10px 30px;
-  color: #254441;
+  color: #26302e;
   background-color: white;
-  border: 2px solid #254441;
+  border: 2px solid #26302e;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  margin-top: 60px;
+  margin-top: 30px;
   transition: 0.3s ease;
   transition-property: background-color, color;
   border-radius: 30px;
 }
 .button:hover {
   color: white;
-  background-color: #254441;
-  border-color: #254441;
+  background-color: #26302e;
+  border-color: #26302e;
 }
 .brand h1 {
   font-size: 3rem;
@@ -76,7 +76,7 @@ p {
   color: white;
 }
 .brand h1 span {
-  color: #17c3b2;
+  color: #26bee2;
 }
 
 /* Header section */
@@ -90,7 +90,7 @@ p {
 }
 #header .header {
   min-height: 8vh;
-  background-color: #485563;
+  background-color: #77898c;
   transition: 0.3s ease background-color;
 }
 #header .nav-bar {
@@ -105,7 +105,7 @@ p {
 #header .nav-list ul {
   list-style: none;
   position: absolute;
-  background-color: #485563;
+  background-color: #77898c;
   width: 100vw;
   height: 100vh;
   left: 100vw;
@@ -148,7 +148,7 @@ p {
   letter-spacing: initial;
 }
 #header .nav-list ul li:hover a {
-  color: #17c3b2;
+  color: #26bee2;
 }
 #header .hamburger {
   height: 60px;
@@ -208,11 +208,14 @@ p {
 
 /* Hero Section */
 #hero {
-  background-image: url(/img/pattern-5358326.png);
-  background-size: cover;
+  background-image: url(/img/cross2.png);
+  /*background-size: cover;*/
+  background-repeat: repeat;
   background-position: top center;
   position: relative;
   z-index: 1;
+  background-attachment: fixed;
+  background-position: center 0;
 }
 #hero::after {
   content: "";
@@ -238,6 +241,7 @@ p {
   color: transparent;
   animation: text_reveal 0.5s ease forwards;
   animation-delay: 1s;
+  font-family: "Pacifico", cursive;
 }
 #hero h1:nth-child(1) {
   animation-delay: 1s;
@@ -245,13 +249,18 @@ p {
 #hero h1:nth-child(2) {
   animation-delay: 2s;
 }
+#hero h1:nth-child(3) {
+  animation-delay: 3s;
+}
+
 #hero h1 span {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 0;
-  background-color: #fdff47;
+  /*background-color: #fdff47;*/
+  color: #26bee2;
   animation: text_reveal_box 1s ease;
   animation-delay: 0.5s;
 }
@@ -261,9 +270,29 @@ p {
 #hero h1:nth-child(2) span {
   animation-delay: 1.5s;
 }
+#hero h1:nth-child(3) span {
+  animation-delay: 2.5s;
+}
 #hero .hero .cat {
   background-image: url(/img/hanging-cat-small.png);
   background-size: contain;
+}
+#HangingCats {
+  position: relative;
+  width: 60vw;
+  height: 550px;
+  box-sizing: border-box;
+  margin: 70px;
+}
+#Whitecat,
+#Blackcat {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: none;
+  object-position: 0% 0%;
 }
 /* End Hero Section */
 
@@ -307,11 +336,18 @@ p {
   letter-spacing: 0.2rem;
   margin-bottom: 10px;
   text-align: center;
-  color: #254441;
+  color: #26302e;
 }
 #about p {
   margin-bottom: 20px;
   padding: 10px 30px 0px 30px;
+  color: #26302e;
+}
+#about h3 {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: ##26302e;
 }
 #about .button {
   margin-bottom: 0px;
@@ -330,10 +366,16 @@ p {
   top: 20px;
   height: calc(100% - 30px);
   width: calc(100% - 30px);
-  border: 7px solid #17c3b2;
+  /*border: 7px solid #26bee2;*/
+  background-color: #26bee2;
   z-index: -1;
-  background-color: #17c3b2;
-  border-radius: 10px;
+  /*border-radius: 10px;*/
+  background-image: url(/img/pattern-5358326.png);
+  background-blend-mode: lighten;
+  /*background-color: rgba(255, 255, 255, 0.6);*/
+  background-size: 640px 417px;
+  background-attachment: fixed;
+  background-position: center 0;
 }
 
 /* Skill Chart */
@@ -370,18 +412,18 @@ p {
 }
 
 #about .circular-chart.orange .circle {
-  stroke: #485563;
+  stroke: #26bee2;
 }
 
 #about .circular-chart.green .circle {
-  stroke: #17c3b2;
+  stroke: #3a8ba3;
 }
 
 #about .circular-chart.blue .circle {
-  stroke: #254441;
+  stroke: #77898c;
 }
 #about .percentage {
-  fill: #485563;
+  fill: #77898c;
   font-family: sans-serif;
   font-size: 0.5em;
   text-anchor: middle;
@@ -393,6 +435,18 @@ p {
   flex-direction: column;
   margin: 0;
   padding: 100px 0;
+  background-image: url(/img/crossWhite.png);
+  /*background-size: cover;*/
+  background-repeat: repeat;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+  background-repeat: repeat;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+  background-attachment: fixed;
+  background-position: center 0;
 }
 #projects .all-projects {
   position: relative;
@@ -421,8 +475,8 @@ p {
   height: 61rem;
   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.1), 0 6px 12px 0 rgba(0, 0, 0, 0.1);
   transition: all 250ms ease-in-out;
-  border-radius: 10px;
-  background: url("/img/yatzy1.jpg") no-repeat center center;
+  /*border-radius: 10px;*/
+  background: url("/img/diceWhite.jpg") no-repeat center center;
   background-size: cover;
 }
 #projects .project-main-card::before {
@@ -437,12 +491,12 @@ p {
 #projects .project-main-card .project-title {
   margin-top: -10px;
   font-size: 4.2rem;
-  color: #254441;
+  color: #26302e;
 }
 #projects .project-main-card .project-date {
   margin-top: 0%;
   font-size: 1.5rem;
-  color: #485563;
+  color: #77898c;
   font-weight: 700;
 }
 #projects .project-card {
@@ -455,7 +509,8 @@ p {
   grid-column: span 1;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1), 0 6px 60px 0 rgba(0, 0, 0, 0.1);
   transition: all 250ms ease-in-out;
-  border-radius: 10px;
+  /*border-radius: 10px;*/
+  background-color: white;
 }
 #projects .project-card:hover,
 .project-main-card:hover {
@@ -464,28 +519,30 @@ p {
   box-shadow: 10px 30px 60px 0 rgba(0, 0, 0, 0.1);
 }
 #projects .project-card p {
-  margin: 0 10px;
-  color: #485563;
+  /*margin: 0 10px;*/
+  color: #77898c;
+  margin: 0px 10px 0px 10px;
 }
 #projects .project-card h2 {
-  margin: 0 10px;
-  color: #254441;
+  /*margin: 0 10px;*/
+  color: #26302e;
+  margin: 10px 10px 0px 10px;
 }
 #projects .project-card .project-date {
-  margin-top: auto;
-  margin-bottom: 10px;
+  /*margin-top: auto;*/
+  /*margin-bottom: 10px;*/
 }
 #projects .project-card h2 {
   font-weight: 700;
-  margin-top: 10px;
+  /*margin-top: 10px;*/
 }
 #projects .project-card .project-description {
-  margin-top: 10px;
+  /*margin-top: 10px;*/
   font-size: 0.9 rem;
-  color: #485563;
+  color: #77898c;
 }
 #projects .project-card img {
-  border-radius: 10px;
+  /*border-radius: 10px;*/
   object-fit: cover;
   width: 100%;
   height: 150px;
@@ -498,12 +555,12 @@ p {
   /*max-width: 1200px;*/
   margin: 0 auto;
   padding: 100px;
-  background-image: url(/img/pattern-5358326.png);
+  /*background-image: url(/img/pattern-5358326.png);
   background-blend-mode: lighten;
   background-color: rgba(255, 255, 255, 0.6);
   background-size: 640px 417px;
   background-attachment: fixed;
-  background-position: center 0;
+  background-position: center 0;*/
 }
 #contact .contact-items {
   display: grid;
@@ -514,7 +571,7 @@ p {
   width: 85%;
   padding: 20px;
   text-align: center;
-  border-radius: 10px;
+  /*border-radius: 10px;*/
   padding: 30px;
   margin: 10px;
   display: flex;
@@ -561,13 +618,13 @@ p {
   height: 40px;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid #485563;
+  border: 1px solid #77898c;
 }
 #contact .contact-items .textarea {
   border-radius: 10px;
-  border: 1px solid #485563;
+  border: 1px solid #77898c;
   padding: 10px;
-  color: #485563;
+  color: #77898c;
 }
 .contact-form {
   position: relative;
@@ -584,7 +641,7 @@ p {
   display: inline-block;
   padding: 10px 30px;
   background-color: white;
-  border: 2px solid #254441;
+  border: 2px solid #26302e;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -592,18 +649,18 @@ p {
   transition: 0.3s ease;
   transition-property: background-color, color;
   border-radius: 30px;
-  color: #254441;
+  color: #26302e;
 }
 #contact .contact-items .button:hover {
   color: white;
-  background-color: #254441;
-  border-color: #254441;
+  background-color: #26302e;
+  border-color: #26302e;
 }
 /*End Contact Section */
 
 /* Footer */
 #footer {
-  background-color: #485563;
+  background-color: #26302e;
 }
 #footer .footer {
   min-height: 200px;
@@ -682,8 +739,7 @@ p {
 }
 @keyframes text_reveal {
   100% {
-    font-family: "Pacifico", cursive;
-    color: #254441;
+    color: white;
   }
 }
 /* End Keyframes */
@@ -766,7 +822,7 @@ p {
     height: 400px;
     margin: 0;
     width: 100%;
-    border-radius: 0;
+    /*border-radius: 0;*/
   }
   #projects .all-projects .project-info {
     height: 100%;
@@ -796,7 +852,7 @@ p {
     width: 98%;
     background-color: #17c3b2;
     background-color: #17c3b2;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
   }
   #about .col-right {
     text-align: left;
@@ -885,7 +941,7 @@ p {
     flex-direction: row;
   }
   #projects .all-projects {
-    grid-template-columns: 200px 200px 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   #projects .project-item:nth-child(even) {
     flex-direction: row-reverse;
@@ -894,7 +950,7 @@ p {
     height: 400px;
     margin: 0;
     width: 100%;
-    border-radius: 0;
+    /*border-radius: 0;*/
   }
   #projects .all-projects .project-info {
     height: 100%;
