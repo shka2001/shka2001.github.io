@@ -688,6 +688,7 @@ p {
   flex-direction: column;
   padding-top: 50px;
   padding-bottom: 10px;
+  text-align: center;
 }
 #footer h2 {
   color: white;
@@ -700,6 +701,7 @@ p {
 #footer .social-icon {
   display: flex;
   margin-bottom: 30px;
+  margin: auto;
 }
 #footer .social-item {
   height: 50px;
